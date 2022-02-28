@@ -1,0 +1,38 @@
+{
+"people": [
+        {
+        "name": "Mirsolikh MailRu",
+        "email": "mirsamatmirsolih@mail.ru"
+        },
+        {
+        "name": "Mirsolikh Verifone",
+        "email": "mirsolikhm1@verifone.com"
+        }, 
+        {
+        "name": "Mirsolikh Gmail",
+        "email": "mirsamatmirsolih@gmail.com"
+        }, 
+        {
+        "name": "Mirsolikh Alex",
+        "email": "alexclark2021@mail.ru"
+        }  
+    ],
+"licenses": [
+        {
+        "name": "Linux Anyconnect",
+        "exp_date": "20.02.2022"
+        },
+        {
+        "name": "Microsoft Teams",
+        "exp_date": "25.02.2022"
+        },
+        {
+        "name": "Microsoft",
+        "exp_date": "18.02.2022"
+        },
+        {
+        "name": "Microsoft Office",
+        "exp_date": "10.03.2022"
+        }
+    ]
+}
