@@ -1,5 +1,7 @@
 import json
-from datetime import datetime, date 
+from datetime import datetime, date
+from unicodedata import name 
+import operator
 
 class MyObject:
     def __init__(self, people, licenses):
@@ -7,7 +9,7 @@ class MyObject:
         self.licenses = licenses
 
     def load_people(self, filename):
-        with open('data.json', 'r') as file:
+        with open(filename, 'r') as file:
             data = json.loads(file.read())
         
         self.people = data['people']
@@ -29,26 +31,33 @@ today = date.today()
 today = datetime.strftime(today, "%d.%m.%Y")
 
 
-people = MyObject 
-people.load_people(people,'test.json')
+MyObject.load_people(MyObject,'test.json')
 
-print(people.admins)
+#person.print_info_people(person)
 
-    
+#print(str(person))
 
 print("-------------------------------")
 
-licenses = MyObject
-licenses.load_licenses(licenses, 'test.json')
+
+MyObject.load_licenses(MyObject, 'test.json')
 
 to =[]
 
-for i in licenses.licenses:
-    for j in people.people:
+
+
+#print(person.people[0]["admins"][1]['email'])
+
+k=0
+for i in MyObject.licenses:
+    for j in MyObject.people:
         if (i["exp_date"] == today):
             print("Found")
-            if (i["group"] == j["group"]):
-                to.append(j)
-
+            #print(j["name"])
+            if operator.contains(j["group"],i["group"]):
+                print(i["name"])
+                print(j["name"])
+                to.append(j["email"]) 
+print(to)
 #licenses.print_info_licenses(licenses)
 

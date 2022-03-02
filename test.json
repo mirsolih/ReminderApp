@@ -1,42 +1,42 @@
 {
-    "people": [ 
-            {
-            "name": "Mirsolikh MailRu",
-            "email": "mirsamatmirsolih@mail.ru",
-            "group": "admins"
-            },
-            {
-            "name": "Mirsolikh Verifone",
-            "email": "mirsolikhm1@verifone.com",
-            "group": "admins"
-            },
-            {
-            "name": "Mirsolikh Gmail",
-            "email": "mirsamatmirsolih@gmail.com",
-            "group": "developers"
-            }, 
-            {
-            "name": "Mirsolikh Alex",
-            "email": "alexclark2021@mail.ru",
-            "group": "developers"
-            } 
-
-          ],
+    "people": [
+        {
+        "name": "Mirsolikh MailRu",
+        "email": "mirsamatmirsolih@mail.ru",
+        "group": "admins"
+        },
+        {
+        "name": "Mirsolikh Verifone",
+        "email": "mirsolikhm1@verifone.com",
+        "group": "admins"
+        },
+        {
+        "name": "Mirsolikh Gmail",
+        "email": "mirsamatmirsolih@gmail.com",
+        "group": "developers"
+        }, 
+        {
+        "name": "Mirsolikh Alex",
+        "email": "alexclark2021@mail.ru",
+        "group":"developers, admins"
+        } 
+ ],
 
     "licenses": [
             {
-            "name": "Linux Anyconnect",
-            "exp_date": "20.02.2022",
-            "group": "admins"
+            "name": "Linux Anyconnect1",
+            "exp_date": "02.03.2022",
+            "group": "admins",
+            "script": "./scripts/01_linux.py"
             },
             {
             "name": "Microsoft Teams",
-            "exp_date": "28.02.2022",
+            "exp_date": "01.03.2022",
             "group": "admins"
             },
             {
             "name": "Microsoft",
-            "exp_date": "18.02.2022",
+            "exp_date": "02.03.2022",
             "group":"developers"
             },
             {

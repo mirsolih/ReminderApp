@@ -18,16 +18,3 @@ def email_alert(subject, body, to):
     server.send_message(msg)
 
     server.quit()
-
-def checking(licenses, today, to):
-    for i in licenses.licenses:
-        if(i["exp_date"] == today):
-            print("found")
-            if __name__ == '__main__':
-                body = "Hey please update the license " + i["name"] + " it will be expired on "+ i["exp_date"]
-                subject = "Update " + i["name"] + " license"
-                print(subject, body, to)
-                #functions.email_alert(subject, body, to)
-                break
-        else:
-            print("No license has to be updated")
